@@ -1,0 +1,111 @@
+
+.product-grid {
+    display: grid;
+    gap: 20px;
+    grid-template-columns: repeat(2, 1fr); /* Mobile */
+    padding: 20px;
+  }
+  
+  @media (min-width: 768px) {
+    .product-grid {
+      grid-template-columns: repeat(3, 1fr); /* Tablet */
+    }
+  }
+  
+  @media (min-width: 1024px) {
+    .product-grid {
+      grid-template-columns: repeat(5, 1fr); /* Desktop */
+    }
+  }
+ 
+  .product-card {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    padding: 15px;
+    transition: transform 0.3s ease;
+  }
+  
+  .product-card:hover {
+    transform: translateY(-5px);
+  }
+ 
+  .product-card__image {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+    border-radius: 4px;
+  }
+  
+  .product-card__badges {
+    margin: 10px 0;
+  }
+  
+  .badge {
+    display: inline-block;
+    padding: 4px 8px;
+    border-radius: 12px;
+    font-size: 0.8rem;
+    font-weight: bold;
+    margin-right: 5px;
+  }
+  
+  .badge--primary {
+    background-color: #007bff;
+    color: #fff;
+  }
+  
+  .badge--secondary {
+    background-color: #6c757d;
+    color: #fff;
+  }
+
+  .product-card__title {
+    font-size: 1.2rem;
+    margin: 10px 0 5px;
+    color: #333;
+  }
+
+  .product-card__description {
+    font-size: 0.9rem;
+    color: #666;
+    margin-bottom: 15px;
+  }
+ 
+  .product-card__buttons {
+    margin-top: auto;
+  }
+  
+  .button {
+    padding: 8px 15px;
+    border: none;
+    border-radius: 4px;
+    font-size: 0.9rem;
+    cursor: pointer;
+    margin: 5px;
+    transition: background-color 0.3s ease;
+  }
+  
+  .button--primary {
+    background-color: #007bff;
+    color: #fff;
+  }
+  
+  .button--primary:hover {
+    background-color: #0056b3;
+  }
+  
+  .button--secondary {
+    background-color: #6c757d;
+    color: #fff;
+  }
+  
+  .button--secondary:hover {
+    background-color: #5a6268;
+  }
+  
